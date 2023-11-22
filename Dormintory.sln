@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dormintory", "Dormintory.csproj", "{492E5B18-02BF-4260-BAE8-6ECF68055EAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{492E5B18-02BF-4260-BAE8-6ECF68055EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492E5B18-02BF-4260-BAE8-6ECF68055EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492E5B18-02BF-4260-BAE8-6ECF68055EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492E5B18-02BF-4260-BAE8-6ECF68055EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8257CE4-5A69-4AC8-ACD4-70FAE5BA8F6B}
+	EndGlobalSection
+EndGlobal

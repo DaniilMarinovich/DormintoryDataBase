@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="alpy-alpen-gory-shvejcariya-nebo-oblaka-priroda-trava-lug-les-pejzazh.jpg" />
+    <None Remove="lavanda_pole_zvezdnoe_nebo_123482_1280x720.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0-preview3.23201.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="alpy-alpen-gory-shvejcariya-nebo-oblaka-priroda-trava-lug-les-pejzazh.jpg" />
+    <Resource Include="lavanda_pole_zvezdnoe_nebo_123482_1280x720.jpg" />
+  </ItemGroup>
+
+</Project>

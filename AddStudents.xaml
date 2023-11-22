@@ -1,0 +1,23 @@
+﻿<Window x:Name="AddStudentsWindow" x:Class="Lab8.AddStudents"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab8"
+        mc:Ignorable="d"
+           Title="AddStudents" Height="300" Width="540" MaxWidth="540" MinWidth="540" MinHeight="300" MaxHeight="300">
+    <Grid Background="#FFD2FFE7" Width="{Binding ElementName=window, Path=Width,  Mode=OneWay}" Height="{Binding ElementName=window, Path=Height,  Mode=OneWay}">
+        <Label Content="ФИО студента" HorizontalAlignment="Left" Margin="18,20,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ID факультета" HorizontalAlignment="Left" Margin="18,62,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Номер комнаты" HorizontalAlignment="Left" Margin="18,104,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Группа" HorizontalAlignment="Left" Margin="18,146,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ID проподователя" HorizontalAlignment="Left" Margin="18,188,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="FullNameStudent" HorizontalAlignment="Left" Margin="249,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="IDFaculties" HorizontalAlignment="Left" Margin="249,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="RoomNumber" HorizontalAlignment="Left" Margin="249,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="IDGroup" HorizontalAlignment="Left" Margin="249,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="IDTutor" HorizontalAlignment="Left" Margin="249,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="13"/>
+        <Button x:Name="SaveButton" Content="Применить" HorizontalAlignment="Left" Margin="408,194,0,0" VerticalAlignment="Top" FontSize="20" Click="SaveButton_Click"/>
+
+    </Grid>
+</Window>

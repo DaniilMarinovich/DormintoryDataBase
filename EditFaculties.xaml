@@ -1,0 +1,21 @@
+﻿<Window x:Class="Lab8.EditFaculties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab8"
+        mc:Ignorable="d"
+        Title="EditFaculties" Height="220" Width="700" MaxWidth="700" MinWidth="700" MinHeight="220" MaxHeight="220">
+    <Grid Background="#FFD2FFE7" Width="{Binding ElementName=window, Path=Width,  Mode=OneWay}" Height="{Binding ElementName=window, Path=Height,  Mode=OneWay}">
+        <Label Content="ID факультета&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Название факультета" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ФИО декана" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Телефон декана" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="NameFaculties" HorizontalAlignment="Left" Margin="241,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="FullNameDean" HorizontalAlignment="Left" Margin="241,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="NumberDean" HorizontalAlignment="Left" Margin="241,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" FontSize="20" MaxLines="1"/>
+        <Button x:Name="SaveButton" Content="Применить" HorizontalAlignment="Left" Margin="393,10,0,0" VerticalAlignment="Top" FontSize="20" Click="SaveButton_Click"/>
+        <ComboBox x:Name="IDFaculties" HorizontalAlignment="Left" Margin="241,20,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="IDFaculties_SelectionChanged"/>
+
+    </Grid>
+</Window>

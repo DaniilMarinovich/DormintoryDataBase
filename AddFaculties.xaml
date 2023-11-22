@@ -1,0 +1,19 @@
+﻿<Window x:Class="Lab8.AddFaculties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab8"
+        mc:Ignorable="d"
+           Title="AddFaculties" Height="220" Width="540" MaxWidth="540" MinWidth="540" MinHeight="220" MaxHeight="220">
+    <Grid Background="#FFD2FFE7" Width="{Binding ElementName=window, Path=Width,  Mode=OneWay}" Height="{Binding ElementName=window, Path=Height,  Mode=OneWay}">
+        <Label Content="Название факультета" HorizontalAlignment="Left" Margin="15,16,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ФИО декана" HorizontalAlignment="Left" Margin="15,58,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Телефон декана" HorizontalAlignment="Left" Margin="15,100,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="NameFaculties" HorizontalAlignment="Left" Margin="246,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="FullNameDean" HorizontalAlignment="Left" Margin="246,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="NumberDean" HorizontalAlignment="Left" Margin="246,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" MaxLines="1"/>
+        <Button x:Name="SaveButton" Content="Применить" HorizontalAlignment="Left" Margin="405,102,0,0" VerticalAlignment="Top" FontSize="20" Click="SaveButton_Click"/>
+
+    </Grid>
+</Window>
